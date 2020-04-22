@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colorado Live</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script type="text/javascript" src="js/choropleth.js"></script>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+  </head>
+<!-- BODY ------------------------------------------------- -->
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="states.html">States</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="colorado.html">Colorado</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="economic.html">Economic Impact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="isotype.html">More Visuals</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" style="float: right">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" style="float: right">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit" style="float: right">Search</button>
+          </form>
+        </div>
+      </nav>
+    
+    <!-- CONTENT ------------------------------------------------------------------------------------------------->
+        <div class="container"> 
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-4" style="padding-top: 40px; padding-bottom: 40px">
+                            <h4>Colorado Live Summary</h4>
+                    <table class="table">
+                      <!-- <div id="co-summary"> -->
+                        <thead>
+                          <tbody id="co-summary">
+                          <!-- live data goes here -->
+                          </tbody>
+                        </thead>
+                      <!-- </div> -->
+                    </table>
+                </div>
+                <div class="col col-lg-8" style="padding-top: 40px; padding-bottom: 40px">
+                    <h4>Colorado Live COVID-19 Positive Case Chloropleth</h4>
+                    <div id="mapid" style="width: 750px; height: 500px; position: relative;" class="leaflet-container leaflet-fade-anim leaflet-grab leaflet-touch-drag" tabindex="0">
+                    </div>   
+                </div>
+            </div>
+            <table class="table" style="padding-top: 15px">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">County</th>
+                  <th scope="col">Population</th>
+                  <th scope="col">Positive Cases</th>
+                  <th scope="col">Rate Per 100,000</th>
+                  <th scope="col">% of Total State Cases</th>
+                </tr>
+                <tbody id="county-summary">
+                  <!-- <tr> -->
+                    <!-- <td>Saguache</td>
+                    <td>6837</td>
+                    <td>3</td>
+                    <td>-1</td>
+                    <td>3.4%</td> -->
+                  <!-- </tr> -->
+                </tbody>
+              </thead>
+            </table>  
+        </div>             
+
+     
+    <!-- FOOTER -------------------------------------------------------------------------------------->
+        <footer class="container" style="position: relative; bottom: 0;">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>&copy; Footer &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+
+     <!-- Optional JavaScript -->
+     <script type="text/javascript" src="js/co_geojson.js"></script>
+
+    
+  </body>
+</html>
+

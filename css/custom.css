@@ -1,0 +1,161 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+body {
+  height: auto;
+}
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+.wrapper {
+position: relative;
+min-height: 100%;
+padding-bottom: 20px;
+overflow: auto;
+}
+.head {
+margin-bottom: 50px;
+}
+
+/* The styles for the parallax */
+.hero {
+position: relative;
+height: 500px;
+padding: 20px;
+margin: 0;
+background: black;
+background-image: url("../images/covid.jpg");
+background-attachment: fixed;
+background-position: bottom center;
+background-size: cover;
+}
+.hero h1 {
+margin-top: 150px;
+font-size: 100px;
+animation: title 1.2s forwards linear;
+text-align: center;
+color: rgb(210, 248, 255);
+}
+.hero h1 {
+animation: smaller-title 1.2s forwards linear;
+}
+.hero p {
+font-size: 50px;
+opacity: 0;
+animation: subtitle 1.2s forwards linear;
+animation-delay: 1.2s;
+text-align: center;
+color: rgb(210, 248, 255);
+}
+
+/* FEATURETTE */
+#states {
+  background-image: url("../images/statefeature.PNG");
+  background-repeat: no-repeat;
+}
+
+#coloradopng {
+  height: 100%;
+}
+/* .col-md-5 {
+  height: 350px
+} */
+/* CSS from the Leaflet-Choropleth documentation */
+#mapid { height: 180px}
+
+.legend {
+    padding: 6px 6px;
+    font: 12px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #555;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+.legend ul {
+    padding: 0;
+    margin: 0;
+    clear: both;
+    list-style-type: none;
+  }
+  
+.legend li {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+  }
+  
+.legend .min {
+    float: left;
+    padding-bottom: 5px;
+  }
+  
+.legend .max {
+    float: right;
+  }
+
+.leaflet-popup-content {
+    text-align: center;
+  }
+h10 {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0px 0px;
+    text-align: center;
+    margin: 5px 0px 5px
+  }
+  
+h11 {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px;
+    text-align: center;
+    margin: 5px 0px 5px
+  }
+th, td {
+    text-align: left;
+    padding: 5px;
+  }
+
+/* panels to card*/
+
+#selCounty {
+  text-align: center;
+}
+
+.card {
+  height: 110px;
+  border-width: 3px;
+}
+
+.card-body {
+  padding: 10px 10px;
+}
+.card-heading {
+  background-color: #27608a;
+}
+
+.card-title {
+  color: rgb(107, 44, 44);
+  font-size: 18px;
+  text-align: center;
+}
+
+.col-md {
+  padding-top: 40px; 
+  padding-bottom: 40px;
+  padding-left: 15px;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 50px;
+  padding: 10px
+}
+
+.col-md-auto {
+  margin-top: 40px;
+}

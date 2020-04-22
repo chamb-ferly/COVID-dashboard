@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1040">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="keywords" content="Stardust,visualization,WebGL,javascript">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Our CSS -->
+        <link rel="stylesheet" href="css/custom.css">
+
+    <title>Covid Isotype Visualization</title>
+    <link rel="stylesheet" href="style2.css">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/atom-one-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">      
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="states.html">States</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="colorado.html">Colorado</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="economic.html">Economic Impact</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="isotype.html">More Visuals</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" style="float: right">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" style="float: right">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit" style="float: right">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <section>
+        <h1>Covid Isotype Visualization</h1>
+<iframe class="example-container" src="content.html" width="960px" height="500px" scrolling="no" sandbox="allow-popups allow-scripts allow-forms allow-same-origin"></iframe>
+<h2>Blue - Deaths</h2>
+<h2>Orange - Tested Positive</h2>
+<br>
+<h2>Stardust JavaScript Library</h2>
+<p>This is one of the only libraries I found that explicitly created isotype (a method of showing social, technological, biological, and historical connections in pictorial form) visualizations in JavaScript.
+It was extremely niche and the documentation wasn't extremely helpful.</p>
+
+<h2>Pictorial Bar Chart with ECharts JS Library</h2>
+<h3>How likely will a confirmed case of Covid-19 be deadly in the United States?</h3>
+<!-- partial:index.partial.html -->
+<div id="main"></div>
+<!-- partial -->
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/95368/echarts.min-v340-english.js'></script><script  src="script.js"></script>
+
+<p>This is a similar type of visualization, but I soon realized that the percentages are much too low for this to be the most
+    appropriately fitting visualization.</p>
+
+</body>
+</html>

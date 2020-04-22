@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>COVID Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+</head>
+<!-- BODY ------------------------------------------------- -->
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">      
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="states.html">States</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="colorado.html">Colorado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="economic.html">Economic Impact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="isotype.html">More Visuals</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" style="float: right">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" style="float: right">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit" style="float: right">Search</button>
+              </form>
+            </div>
+          </nav>
+    <!-- MAIN IMAGE & TITLE -------------------------------------------------------------------------------------->
+    
+            <div class="hero text-center">
+            <h1>COVID-19</h1>
+            <p>What's Happening?!</p>
+            </div>
+            <div class="container head">
+                <div class="row margin-top-50">
+                    <div class="col-md-2">
+                    </div>
+                </div>
+            </div>
+    
+    <!-- CONTENT ------------------------------------------------------------------------------------------------->
+    
+            <!-- <div class="container marketing"> -->
+                <!-- Three columns of text below the carousel
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"/>
+                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                        </svg>
+                        <h2>World</h2>
+                        <p>View COVID-19 case information by country</p>
+                        <p>
+                            <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
+                        </p>
+                    </div>/.col-lg-4
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"/>
+                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                        </svg>
+                        <h2>United States</h2>
+                        <p>View COVID-19 case visualizations by state</p>
+                        <p>
+                            <a class="btn btn-secondary" href="states.html" role="button">View details &raquo;</a>
+                        </p>
+                    </div>/.col-lg-4
+                    <div class="col-lg-4">
+                        <svg class="rounded-circle" src="../images/colorado.png" width="140" height="140" aria-label="Placeholder: 140x140">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"/>
+                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+                        </svg>
+                        <h2>Colorado Map</h2>
+                        <p>View COVID-19 chloropleth by CO County</p>
+                        <p>
+                            <a class="btn btn-secondary" href="colorado.html" role="button">View details &raquo;</a>
+                        </p>
+                    </div>/.col-lg-4
+                 </div>/.row -->
+    
+    <!-- START THE FEATURETTES -->
+    <div class="container marketing">
+                <hr class="featurette-divider">
+                 <!-- Intro -->
+                 <div class="row featurette justify-content-center">
+                    <div class="col-md">
+                        <h2 class="featurette-heading" style="text-align: center;">COVID-19 Bootcamp Dashboard. <span class="text-muted"><br>Ryerson, Crow, & Neuberger.</span></h2>
+                        <!-- <p class="lead" style="text-align: center;">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> -->
+                    </div>
+                </div>
+                
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">United States Live Tracking. <span class="text-muted">Check it out!</span></h2>
+                        <p class="lead"> Navigate to the United States page to see live tracking data for each State. Daily counts are automatically updated to give you the latest information about your state. This data has been accessed from state government websites and journalistic sources cited. Choose your state to learn more!</p>
+                    </div>
+                    <div class="col-md-5">
+                        <!-- <img id="states" class="mx-auto"> -->
+                        <img src="images/statefeature.PNG" class="img-thumbnail" target="_blank" href="states.html">
+                    </div>
+                </div>
+    
+                <hr class="featurette-divider">
+    
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Colorado County Cases. <span class="text-muted">See for yourself.</span></h2>
+                        <p class="lead">Zoom in and out of Colorado's hardest hit counties in real-time. This data is regularly updated thanks to state government websites and journalistic sources cited. See where you live measures up!</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img id="coloradopng" src="images/colorado.png" class="img-thumbnail">
+                    </div>
+                </div>
+    
+                <hr class="featurette-divider">
+    
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Economic. <span class="text-muted">Government Response</span></h2>
+                        <p class="lead">Is the shutdown really making a difference? Here, we can track what other countries and their governments response relative to the COVID outbreak in that area. School closures, work, public transport, and more factors are included in this stringency index dataset, provided by University of Oxford Blavantnik School of Government. </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img id="stringencypng" src="images/stringency.PNG" class="img-thumbnail">
+                    </div>
+                </div>
+    
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">COVID Isotype</span></h2>
+                        <p class="lead">Thanks to the Stardust.js library! </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img id="isotype" src="images/isotype.PNG" class="img-thumbnail">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+    <!-- /END THE FEATURETTES -->
+            
+            </div> <!--end container-->
+                
+     
+     
+    <!-- FOOTER -------------------------------------------------------------------------------------->
+        <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2020 DU Bootcamp Team: Ryerson, Crow, Neuberger &middot; <a href="Natxc.github.io/CovidDash">GitHub</a></p>
+        </footer>
+        
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
